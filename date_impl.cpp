@@ -119,11 +119,11 @@ const Date Date::operator -- (int val) // postfix decrement operator
 }
 int Date::operator [] (int index) const
 {
-	if(index=0)
+	if(index==0)
 		return this->day;
-	else if(index=1)
+	else if(index==1)
 		return this->month;
-    else if(index=2)
+    else if(index==2)
 		return this->year;
 	else
 		cout << "index can only be 0, 1 or 2" << endl;
